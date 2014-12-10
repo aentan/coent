@@ -21,11 +21,14 @@
     </script>
   </head>
   
-  <body class="<%= page_classes %>">
+  <body id="home" class="<%= page_classes %>">
     
     <%= yield %>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenLite.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/plugins/CSSPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/plugins/ScrollToPlugin.min.js"></script>
     <%= javascript_include_tag  "application" %>
   </body>
 </html>
