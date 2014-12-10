@@ -1,0 +1,198 @@
+---
+title: COENT Venture Partners
+---
+<div class="navbar">
+  <a href="#" class="navbar-brand">COENT</a>
+  <nav class="navbar-nav">
+    <ul>
+      <% items = ['Team', 'Portfolio', 'News', 'Access', 'Recruit', 'Contact'] %>
+      <% items.each do |item| %><li><a href="#<%= item.downcase.gsub(/[^a-z0-9\s]/i, '') %>"><%= item %></a></li><% end %>
+    </ul>
+  </nav>
+</div>
+
+<div id="intro" class="bg-holder bg-jp" data-width="1024" data-height="640">
+  <div class="content">
+    <h1>We Love Backing Entrepreneurs and Strive to Benefit Society</h1>
+    <a href="#" class="btn-cta">Learn More</a>
+  </div>
+</div>
+
+<section id="about" >
+  <div class="content"> 
+    <h2>About</h2>  
+    <p>COENT offers seed and venture-stage funding to start-ups in all sectors across Asia with support in mentorship, business development and more.</p>
+  </div>
+</section>
+
+<div class="bg-holder bg-hk" data-width="1024" data-height="640">
+  <div class="content">
+    <div class="h1">
+      Japan<br>
+      Taiwan<br>
+      Singapore<br>
+      South Korea<br>
+      Hong Kong
+    </div>
+  </div>
+</div>
+
+<section id="team">
+  <div class="content">
+    <h2>Team</h2> 
+    <div class="member">
+      <div class="member-photo">
+        <%= image_tag 'team/photo_shuhei.jpg' %>
+      </div>
+      <div class="member-info">
+        <h3>Shuhei Morofuji</h3>
+        <div class="member-position">Co-Founder &amp; CEO</div>
+        <p>Shuhei is also the Founder of SMS [2175, TSE 1st section], he had been CEO for 11 years.</p>
+        <p>SMS is one of the largest healthcare information platform through internet in Asia with offices in 13 countries.</p>
+        <p>SMS is engaged in over 30 businesses, additionally they have acquired and invested over 20 companies all over the world. Shuhei brings up SMS in $500M market capitalization.</p>
+        <p>Shuhei had personally invested about 10 start-up companies and supported them.</p>
+      </div>
+    </div>
+    <div class="member">
+      <div class="member-photo">
+        <%= image_tag 'team/photo_hideki.jpg' %>
+      </div>
+      <div class="member-info">
+        <h3>Hideki Fujita</h3>
+        <div class="member-position">Co-Founder</div>
+        <p>Prior to COENT, Hideki was director of Business Strategy Office at GREE which is one of the largest mobile social gaming companies in the world, where he did corporate management and strategic investment to mobile gaming companies in Japan and China.</p>
+        <p>Prior to GREE, Hideki worked at JAFCO which is the largest venture capital firm in Japan, where he had backed entrepreneurs of growing companies and have successful investment including Full Speed Inc. [2159, TSE Mothers] and SMS [2175, TSE 1st section].</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bg-holder bg-tw" data-width="1024" data-height="640">
+  <div class="content">
+    <div class="h1">Biotech, Fashion, Trade, E-commerce, On-demand Services, Entertainment, E-learning</div>
+  </div>
+</div>
+
+<section id="portfolio">
+  <div class="content">   
+    <h2>Portfolio</h2>
+    <div class="portfolio-items">
+      <% items = ['Shopline', 'GoGoVan', 'Q.L.L.', 'OpenTrade', 'Prenetics', 'ParkLU', 'Booktrack'] %>
+      <% items.each do |item| %>
+      <div class="portfolio-item">
+        <%= image_tag "logos/#{item.downcase.gsub(/[^a-z0-9\s]/i, '')}.png" %>
+        <span class="portfolio-name"><%= item %></span>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<section id="news">
+  <div class="content">   
+    <h2>In The News</h2>
+    <ul class="news">
+      <li class="news-item">
+        <h3>Prenetics Raises $2.65M To Bring Safe, Accurate DNA-Based Prenatal Testing To Asia.</h3>
+        <ul class="news-tags">
+          <li><a href="#">TechCrunch</a></li>
+          <li><a href="#">Yahoo Finance</a></li>
+          <li><a href="#">Reuters</a></li>
+          <li><a href="#">蘋果日報</a></li>
+          <li><a href="#">StartUpBeat</a></li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <h3>Taiwan-Based Educational App Developer QLL Raises $450,000 For International Expansion.</h3>
+        <ul class="news-tags">
+          <li><a href="#">TechCrunch</a></li>
+          <li><a href="#">Tech In Asia</a></li>
+          <li><a href="#">e27</a></li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <h3>Chinese Social Network Renren Invests In Hong Kong Startup GoGoVan.</h3>
+        <ul class="news-tags">
+          <li><a href="#">Wall Street Journal</a></li>
+          <li><a href="#">Tech In Asia</a></li>
+          <li><a href="#">e27</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="bg-holder bg-sg" data-width="1024" data-height="640">
+  <div class="content">
+    <div class="h1">We are in Singapore</div>
+  </div>
+</div>
+
+<section id="access">
+  <div class="content">   
+    <h2>Access</h2>
+    <p>10 Anson Road #13-13A, International Plaza, Singapore 079903</p>
+    <div id="map">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwpT_zDspMfx4_WSM4lvl-L12c5U2RptI&sensor=false"></script>
+    <script type="text/javascript">
+      google.maps.event.addDomListener(window, 'load', init);
+      function init() {
+        var mapOptions = {
+          backgroundColor: 'black',
+          scrollwheel: false,
+          mapTypeControl: false,
+          zoom: 17,
+          center: new google.maps.LatLng(1.2761277,103.8459285),
+          styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill"},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"color":"#7dcdcd"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]}]
+        };
+        var mapElement = document.getElementById('map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(1.2761277,103.8459285),
+          map: map,
+          title: 'Snazzy!'
+        });
+      }
+    </script>
+  </div>
+</section>
+
+<hr>
+
+<section id="jobs">
+  <div class="content">   
+    <h2>Jobs</h2>
+    <div class="job">
+      <div class="job-info">
+        <h3>Venture Capital Intern</h3>
+        <p>Suitable for those who are:</p>
+        <ul>
+        	<li>Staying in Singapore.</li>
+        	<li>Fluent English (spoken and written).</li>
+        	<li>Strongly interested in start-up companies in Asia and Africa.</li>
+        	<li>Strongly interested in venture capital in all over the World.</li>
+        	<li>Strongly want to work at start-up companies and venture capital.</li>
+        </ul>
+        <p>Key Responsibilities:</p>
+        <ul>
+        	<li>Research about startup companies in Asia and Africa.</li>
+        	<li>Research about venture investments in all over the world.</li>
+        	<li>Support the management.</li>
+        </ul>
+      </div>
+      <div class="job-actions">
+        <p>Apply Now</p>
+        <div><a href="mailto:info@coent.sg" class="btn-cta">info@coent.sg</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bg-holder bg-contact" data-width="1024" data-height="640">
+  <div class="content">
+    <div class="h1">info@coent.sg</div>
+    <a href="#" class="btn-cta">Drop Us A Mail</a>
+  </div>
+</div>
